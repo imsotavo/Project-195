@@ -1,0 +1,9 @@
+{
+  "name": "Project 195",
+  "short_name": "Project195",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0c0c0e",
+  "theme_color": "#111111",
+  "icons": []
+}

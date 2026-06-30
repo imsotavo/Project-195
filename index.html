@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Project 195</title>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <p class="eyebrow">TAVO PERFORMANCE</p>
+        <h1>Project 195</h1>
+      </div>
+      <button id="resetBtn" class="ghost">Reset</button>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="label">Current Weight</p>
+        <div class="big"><span id="currentWeight">215</span> lb</div>
+      </div>
+      <div>
+        <p class="label">Goal</p>
+        <div class="big">195 lb</div>
+      </div>
+      <div class="progressWrap">
+        <div class="progressBar"><span id="weightProgress"></span></div>
+        <p id="progressText">0% to goal</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card stat"><span id="completedDays">0</span><small>/ 42 days</small><p>Completed</p></div>
+      <div class="card stat"><span id="streak">0</span><small>days</small><p>Streak</p></div>
+      <div class="card stat"><span id="proteinToday">0</span><small>/ 190g</small><p>Protein</p></div>
+      <div class="card stat"><span id="waterToday">0</span><small>/ 3L</small><p>Water</p></div>
+    </section>
+
+    <section class="card today">
+      <div class="row">
+        <div>
+          <p class="eyebrow" id="weekFocus"></p>
+          <h2 id="workoutTitle"></h2>
+          <p id="workoutGoal"></p>
+        </div>
+        <div class="pill" id="duration"></div>
+      </div>
+      <div class="meta">
+        <span id="weekday"></span>
+        <span id="difficulty"></span>
+        <span id="badge"></span>
+      </div>
+      <button id="completeBtn" class="primary">Mark Today Complete</button>
+    </section>
+
+    <section class="card">
+      <h3>Warm-up</h3>
+      <ul id="warmup"></ul>
+    </section>
+
+    <section class="card">
+      <h3>Main Workout</h3>
+      <ul id="mainWorkout"></ul>
+    </section>
+
+    <section class="card">
+      <h3>Mobility + Back Care</h3>
+      <p class="note" id="backNote"></p>
+      <ul id="mobility"></ul>
+    </section>
+
+    <section class="card tracker">
+      <h3>Daily Tracker</h3>
+      <label>Weight today <input type="number" id="weightInput" step="0.1" placeholder="215.0"></label>
+      <label>Protein grams <input type="number" id="proteinInput" step="5" placeholder="190"></label>
+      <label>Water liters <input type="number" id="waterInput" step="0.25" placeholder="3.0"></label>
+      <button id="saveBtn" class="secondary">Save Today</button>
+    </section>
+
+    <section class="card">
+      <h3>42-Day Calendar</h3>
+      <div id="calendar" class="calendar"></div>
+    </section>
+
+    <section class="card">
+      <h3>Nutrition Rules</h3>
+      <p>Keep your two-meal schedule. Each meal: 2 palms protein, half plate vegetables, 1 fist carbs, 1 thumb fat. Add a protein bar or shake to reach 180-200g protein/day.</p>
+      <p class="note">Simple target: lunch 60g protein, snack 30g, dinner 70g, optional shake 30g.</p>
+    </section>
+  </div>
+  <script src="workouts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
